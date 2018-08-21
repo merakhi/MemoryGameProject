@@ -20,3 +20,8 @@ to spot the identical pairs in each level.
 
 - [Clone the project](https://github.com/merakhi/MemoryGameProject.git) or download the [zip of the project](https://github.com/merakhi/MemoryGameProject/archive/master.zip).
 - Open the index.html in browser that you like.
+
+
+## Dependencies of the Game 
+- Font Awesome
+- Google Fonts
