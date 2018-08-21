@@ -10,7 +10,7 @@ to spot the identical pairs in each level.
 -Your goal is to find matching pairs in minimum moves and time as possible.
 
 
-## Technology used
+## Technology used to build this project
 
 -HTML
 -CSS
