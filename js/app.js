@@ -168,22 +168,33 @@ function getEventTarget(e) {
     e = e || window.event;
     return e.target || e.srcElement;
 }
+let cardClickCount=0;
 
 //check which element is clicked
 function  check(event) {
   event.preventDefault();
 
-  if(event.target.nodeName ==="LI") {
-    if(timerRunning==0) {
-      timerRunning++;
-      intervalCounter = setInterval(function() {
-        timer(); // timer function called
-      }, 1000);
-    }
+ if(event.target.nodeName ==="LI") {
+  cardClickCount++;
 
+  if(timerRunning==0) {
+    timerRunning++;
+    intervalCounter = setInterval(function() {
+      timer(); // timer function called
+    }, 1000);
+  }
+
+
+  let eli=document.getElementsByClassName("card");
   let uli=document.getElementById(event.target.id);
 
   if(uli.classList.contains('match')||uli.classList.contains('open')) {
+    cardClickCount=0;
+    return;
+  }
+
+  if(cardClickCount>2) {
+    cardClickCount=0;
     return;
   }
 
@@ -200,7 +211,7 @@ function  check(event) {
   //push content ot array
   opened.push(cardContent);
 
-  let eli=document.getElementsByClassName("card");
+
   if(opened.length > 1) {
     moves++;
     if(cardContent === opened[0]) {
@@ -232,7 +243,7 @@ function  check(event) {
 
               setTimeout(function(){
                   eli[j].classList.remove("nomatch");
-                },1000);
+                },700);
 
               }
             }
