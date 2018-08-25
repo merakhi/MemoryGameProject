@@ -1,3 +1,4 @@
+'use strict';
 //list that holds all of the cards
 let symbols=['linkedin','android','apple','chrome','codepen','git','slack','github',];
 
