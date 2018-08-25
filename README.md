@@ -3,6 +3,8 @@
 This is a challenging concentration memory game that requires player
 to spot the identical pairs in each level.
 
+[Click the link to play](https://merakhi.github.io/MemoryGameProject/)
+
 ## How to play
 
 - Memorize the given tiles.
@@ -22,6 +24,6 @@ to spot the identical pairs in each level.
 - Open the index.html in browser that you like.
 
 
-## Dependencies of the Game 
+## Dependencies of the Game
 - Font Awesome
 - Google Fonts
